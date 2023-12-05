@@ -1,0 +1,253 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #edcb33;
+}
+
+.navbar {
+    background-color: #333;
+    color: #edcb33;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #618685;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    background-color:  #fefbd8;
+}
+
+#bannerimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.banner h1 {
+    display: inline-block;
+    color: #333;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    background-color: #edcb33;
+}
+
+#slogan{
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.produkticeored{
+    background-color: #edcb33;
+}
+
+.product-row {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-row h2 {
+    color: #333;
+    text-transform: uppercase;
+}
+
+.proizvod {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    display: inline-block;
+    width: 200px; 
+    box-sizing: border-box; 
+    background-color: whitesmoke;
+    margin-right: 45px;
+    margin-left: 45px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.proizvod:hover{
+    transform: scale(1.12);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.proizvod img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#patikem{
+    width: 250px;
+    height: 200px;
+}
+
+#cenapatika{
+    font-weight: bold;
+    font-size: large;
+    background-color: #edcb33;
+}
+
+#linkzadetalje{
+    background-color: #618685;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#linkzadetalje:hover{
+    background-color: #edcb33;
+    color: #333;
+}
+
+.o-nama {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fefbd8;
+}
+
+.o-nama h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.o-nama p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    background-color: rgba(51, 51, 51, 0.8); 
+    margin-left: 100px;
+    margin-right: 100px;
+    color: whitesmoke;
+}
+
+#onamalink {
+    display: inline-block;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+    font-weight: bold;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+#onamalink:hover {
+    background-color: #618685;
+    color: #333;
+    font-weight: bold;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.newsletter button {
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+    font-weight: bold;
+}
+
+.newsletter button:hover{
+
+    background-color: #618685;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
