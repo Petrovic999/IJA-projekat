@@ -49,11 +49,20 @@ nav ul li a:hover {
     background-color: #618685;
 }
 
+@keyframes fadeInAnimacija {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .banner {
     position: relative;
     text-align: center;
     padding: 50px 0;
     background-color:  #fefbd8;
+    animation: fadeInAnimacija 2s ease-in-out;
 }
 
 #bannerimg {
@@ -248,6 +257,43 @@ footer p {
 
     nav ul li {
         margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .proizvod {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .o-nama p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        width: 100%;
         margin-bottom: 10px;
     }
 }
